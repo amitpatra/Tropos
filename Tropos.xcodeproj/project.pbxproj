@@ -95,6 +95,7 @@
 		A11D71D51CD73751000EB4A3 /* CourierClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D71D41CD73751000EB4A3 /* CourierClient.swift */; };
 		A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */; };
 		A1BBE84F1D07D2F900A9631A /* CourierClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */; };
+		A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8691F1D3357D6003A826D /* AppearanceController.swift */; };
 		A1FC9ECD1CFE935500E62618 /* CourierClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D71D41CD73751000EB4A3 /* CourierClient.swift */; };
 		A1FC9ED21CFEA23B00E62618 /* TroposCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; };
 		A1FC9ED31CFEA23B00E62618 /* TroposCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A552EEF1CC7C8F8008C7298 /* TroposCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -310,6 +311,7 @@
 		A1628AE61D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TRReactiveBackgroundTask.h"; sourceTree = "<group>"; };
 		A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TRReactiveBackgroundTask.m"; sourceTree = "<group>"; };
 		A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourierClientSpec.swift; sourceTree = "<group>"; };
+		A1F8691F1D3357D6003A826D /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		A1FC9ECE1CFE937900E62618 /* UnitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A6B1ADBC73A8A2EF7FB4E257 /* TRAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
 		B1E75D271B6E8ADC007B03F9 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 		02DE38BC587E0F44ACAB470A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1F8691F1D3357D6003A826D /* AppearanceController.swift */,
 				4DDF65041AB3AC0C00909D67 /* TRWeatherController.h */,
 				4DDF65051AB3AC0C00909D67 /* TRWeatherController.m */,
 				4D9A00041A9D61CD000835A9 /* TRAnalyticsController.h */,
@@ -1229,6 +1232,7 @@
 				4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */,
 				4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */,
 				4D49554C1A8C298A0066F278 /* TRRefreshView.m in Sources */,
+				A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
 				4D4937781A82F30D007A1FA9 /* TRLabel.m in Sources */,
 				A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */,
