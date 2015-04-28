@@ -91,6 +91,8 @@
 		6D0F135F1B43298E001685BA /* Quick.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F135B1B432976001685BA /* Quick.framework */; };
 		8E55CA903A39795581785ED4 /* libPods-Tropos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D281611EA8A7B26EFB4FBBAC /* libPods-Tropos.a */; };
 		9B35F8D49294C95354F26638 /* Pods-Tropos-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 734AAC0DB56096A9514A0647 /* Pods-Tropos-metadata.plist */; };
+		A10108F91D3369EB0024B1BA /* NSBundle+TRBundleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A10108F81D3369EB0024B1BA /* NSBundle+TRBundleInfo.m */; };
+		A10108FC1D336A940024B1BA /* TRSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A10108FB1D336A940024B1BA /* TRSettingsController.m */; };
 		A11D71D31CD73697000EB4A3 /* Courier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11D71D21CD73697000EB4A3 /* Courier.framework */; };
 		A11D71D51CD73751000EB4A3 /* CourierClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D71D41CD73751000EB4A3 /* CourierClient.swift */; };
 		A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */; };
@@ -306,6 +308,10 @@
 		734AAC0DB56096A9514A0647 /* Pods-Tropos-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Tropos-metadata.plist"; path = "Pods/Pods-Tropos-metadata.plist"; sourceTree = "<group>"; };
 		8AC74E321865FC3EE1BBCAA3 /* Pods-Tropos-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Tropos-settings-metadata.plist"; path = "Resources/Other-Sources/Settings.bundle/Pods-Tropos-settings-metadata.plist"; sourceTree = "<group>"; };
 		986C425E5A2268D27FAE2FAA /* Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		A10108F71D3369EB0024B1BA /* NSBundle+TRBundleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TRBundleInfo.h"; sourceTree = "<group>"; };
+		A10108F81D3369EB0024B1BA /* NSBundle+TRBundleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TRBundleInfo.m"; sourceTree = "<group>"; };
+		A10108FA1D336A940024B1BA /* TRSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSettingsController.h; sourceTree = "<group>"; };
+		A10108FB1D336A940024B1BA /* TRSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSettingsController.m; sourceTree = "<group>"; };
 		A11D71D21CD73697000EB4A3 /* Courier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Courier.framework; path = Carthage/Build/iOS/Courier.framework; sourceTree = "<group>"; };
 		A11D71D41CD73751000EB4A3 /* CourierClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourierClient.swift; sourceTree = "<group>"; };
 		A1628AE61D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TRReactiveBackgroundTask.h"; sourceTree = "<group>"; };
@@ -399,6 +405,8 @@
 				E7A895521AFD11AA0023205B /* TRApplicationController.h */,
 				E7A895531AFD11AA0023205B /* TRApplicationController.m */,
 				A11D71D41CD73751000EB4A3 /* CourierClient.swift */,
+				A10108FA1D336A940024B1BA /* TRSettingsController.h */,
+				A10108FB1D336A940024B1BA /* TRSettingsController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -812,6 +820,8 @@
 				4D7389DE1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m */,
 				A1628AE61D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.h */,
 				A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */,
+				A10108F71D3369EB0024B1BA /* NSBundle+TRBundleInfo.h */,
+				A10108F81D3369EB0024B1BA /* NSBundle+TRBundleInfo.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1227,6 +1237,7 @@
 				A11D71D51CD73751000EB4A3 /* CourierClient.swift in Sources */,
 				4D7389DF1A9890CD0039F13B /* UIScrollView+TRReactiveCocoa.m in Sources */,
 				4DC069CD1A95B8F800F3BCEB /* TRColorBackdropLayer.m in Sources */,
+				A10108F91D3369EB0024B1BA /* NSBundle+TRBundleInfo.m in Sources */,
 				4A8163941CC830A400279952 /* TRSettingsController+TRObservation.m in Sources */,
 				4DDF65061AB3AC0C00909D67 /* TRWeatherController.m in Sources */,
 				4ACA584B1CC526D600DD0CDC /* RACSignal+TROperators.m in Sources */,
@@ -1240,6 +1251,7 @@
 				4D76CCD41A99C3FA00DDE5EB /* TRRefreshLayer.m in Sources */,
 				D7DD1B8AD495AFA4EC1CEFF9 /* TRAppDelegate.m in Sources */,
 				4DC716601A9B1D5B00BC4BD4 /* TRRefreshControl.m in Sources */,
+				A10108FC1D336A940024B1BA /* TRSettingsController.m in Sources */,
 				4A8163951CC830A700279952 /* TRWeatherUpdate+Analytics.m in Sources */,
 				4D49377E1A82F82A007A1FA9 /* TRImageView.m in Sources */,
 				C2E44CFB1A3B76B3009CC844 /* NSNumber+TRRoundedNumber.m in Sources */,
