@@ -96,6 +96,7 @@
 		A10108FE1D336C6A0024B1BA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10108FD1D336C6A0024B1BA /* WebViewController.swift */; };
 		A10109001D336C9C0024B1BA /* TRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10108FF1D336C9C0024B1BA /* TRTableViewCell.swift */; };
 		A10109021D336DBE0024B1BA /* AcknowledgementsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10109011D336DBE0024B1BA /* AcknowledgementsParser.swift */; };
+		A10109041D336E3A0024B1BA /* SettingsBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10109031D336E3A0024B1BA /* SettingsBarButtonItem.swift */; };
 		A11D71D31CD73697000EB4A3 /* Courier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11D71D21CD73697000EB4A3 /* Courier.framework */; };
 		A11D71D51CD73751000EB4A3 /* CourierClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D71D41CD73751000EB4A3 /* CourierClient.swift */; };
 		A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */; };
@@ -318,6 +319,7 @@
 		A10108FD1D336C6A0024B1BA /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A10108FF1D336C9C0024B1BA /* TRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRTableViewCell.swift; sourceTree = "<group>"; };
 		A10109011D336DBE0024B1BA /* AcknowledgementsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowledgementsParser.swift; sourceTree = "<group>"; };
+		A10109031D336E3A0024B1BA /* SettingsBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBarButtonItem.swift; sourceTree = "<group>"; };
 		A11D71D21CD73697000EB4A3 /* Courier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Courier.framework; path = Carthage/Build/iOS/Courier.framework; sourceTree = "<group>"; };
 		A11D71D41CD73751000EB4A3 /* CourierClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourierClient.swift; sourceTree = "<group>"; };
 		A1628AE61D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TRReactiveBackgroundTask.h"; sourceTree = "<group>"; };
@@ -664,6 +666,7 @@
 		639AAB142C96B59FC995CA1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A10109031D336E3A0024B1BA /* SettingsBarButtonItem.swift */,
 				A10108FF1D336C9C0024B1BA /* TRTableViewCell.swift */,
 				4DC7165E1A9B1D5B00BC4BD4 /* TRRefreshControl.h */,
 				4DC7165F1A9B1D5B00BC4BD4 /* TRRefreshControl.m */,
@@ -1257,6 +1260,7 @@
 				A10109021D336DBE0024B1BA /* AcknowledgementsParser.swift in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
 				4D4937781A82F30D007A1FA9 /* TRLabel.m in Sources */,
+				A10109041D336E3A0024B1BA /* SettingsBarButtonItem.swift in Sources */,
 				A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */,
 				C2E44CDD1A3A38A2009CC844 /* TRLocationController.m in Sources */,
 				4D76CCD41A99C3FA00DDE5EB /* TRRefreshLayer.m in Sources */,
