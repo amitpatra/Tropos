@@ -3,7 +3,7 @@ import UIKit
 class WebViewController : UIViewController, UIWebViewDelegate {
     @IBOutlet weak var webView: UIWebView!
 
-    var URL: NSURL = NSURL()
+    var URL = NSURL()
 
     // MARK: UIViewController
 
