@@ -4,6 +4,10 @@ import TroposCore
 enum SettingsTableViewControllerSegueIdentifier: String {
     case PrivacyPolicy = "ShowWebViewController"
     case Acknowledgements = "ShowTextViewController"
+
+    init(identifier: String?) {
+      self.init(rawValue: identifier!)!
+    }
 }
 
 enum Section: Int {
@@ -40,7 +44,9 @@ class SettingsTableViewController: UITableViewController {
         }
 
         thoughtbotImageView.tintColor = .lightTextColor();
-        thoughtbotImageView.image = thoughtbotImageView.image?.imageWithRenderingMode(.AlwaysTemplate)
+        thoughtbotImageView.image = thoughtbotImageView.image?.imageWithRenderingMode(
+          .AlwaysTemplate
+      )
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,22 +55,27 @@ class SettingsTableViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let identifier = SettingsTableViewControllerSegueIdentifier(rawValue: segue.identifier ?? "") {
-            switch identifier {
-            case .PrivacyPolicy:
-                let webViewController = segue.destinationViewController as? WebViewController
-                webViewController?.URL = NSURL(string: "http://www.troposweather.com/privacy/")!
-            case .Acknowledgements:
-                let textViewController = segue.destinationViewController as? TextViewController
-                print(NSBundle.mainBundle().resourcePath)
-                let fileURL = NSBundle.mainBundle().URLForResource("Pods-Tropos-settings-metadata", withExtension: "plist")
-                let parser = fileURL.flatMap { AcknowledgementsParser(fileURL: $0) }
-                textViewController?.text = parser?.displayString()
-            }
+        switch SettingsTableViewControllerSegueIdentifier(identifier: segue.identifier) {
+          case .PrivacyPolicy:
+              let webViewController = segue.destinationViewController as? WebViewController
+              webViewController?.URL = NSURL(string: "http://www.troposweather.com/privacy/")!
+          case .Acknowledgements:
+              let textViewController = segue.destinationViewController as? TextViewController
+              print(NSBundle.mainBundle().resourcePath)
+              let fileURL = NSBundle.mainBundle().URLForResource(
+                "Pods-Tropos-metadata",
+                withExtension: "plist"
+              )
+              let parser = fileURL.flatMap { AcknowledgementsParser(fileURL: $0) }
+              textViewController?.text = parser?.displayString()
         }
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(
+      tableView: UITableView,
+      didSelectRowAtIndexPath
+      indexPath: NSIndexPath
+    ) {
         switch (indexPath.section, indexPath.row) {
         case (Section.UnitSystem.rawValue, _):
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -78,14 +89,21 @@ class SettingsTableViewController: UITableViewController {
         }
     }
 
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(
+      tableView: UITableView,
+      willDisplayHeaderView view: UIView,
+      forSection section: Int
+    ) {
         if let headerView = view as? UITableViewHeaderFooterView {
             headerView.textLabel?.font = .defaultLightFont(size: 13)
             headerView.textLabel?.textColor = .lightTextColor()
         }
     }
 
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(
+      tableView: UITableView,
+      titleForHeaderInSection section: Int
+    ) -> String? {
         switch section {
         case Section.About.rawValue: return appVersionString()
         default: return super.tableView(tableView, titleForHeaderInSection: section)
