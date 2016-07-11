@@ -234,7 +234,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="thoughtbotImageView" destination="wl8-Vy-9eF" id="1lJ-as-C3Y"/>
+                        <outlet property="thoughtbotImageView" destination="wl8-Vy-9eF" id="gXU-Sg-fTu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ych-ep-rVP" userLabel="First Responder" sceneMemberID="firstResponder"/>

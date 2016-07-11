@@ -98,6 +98,7 @@
 		A11D71D31CD73697000EB4A3 /* Courier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11D71D21CD73697000EB4A3 /* Courier.framework */; };
 		A11D71D51CD73751000EB4A3 /* CourierClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D71D41CD73751000EB4A3 /* CourierClient.swift */; };
 		A12FCE251D336FA90062E7F1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FCE241D336FA90062E7F1 /* Color.swift */; };
+		A12FCE261D3385440062E7F1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D115AF11ADC8C0C0032AAA3 /* SettingsTableViewController.swift */; };
 		A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */; };
 		A1BBE84F1D07D2F900A9631A /* CourierClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */; };
 		A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8691F1D3357D6003A826D /* AppearanceController.swift */; };
@@ -1265,6 +1266,7 @@
 				A12FCE251D336FA90062E7F1 /* Color.swift in Sources */,
 				A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */,
 				A10109021D336DBE0024B1BA /* AcknowledgementsParser.swift in Sources */,
+				A12FCE261D3385440062E7F1 /* SettingsTableViewController.swift in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
 				4D4937781A82F30D007A1FA9 /* TRLabel.m in Sources */,
 				A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */,
