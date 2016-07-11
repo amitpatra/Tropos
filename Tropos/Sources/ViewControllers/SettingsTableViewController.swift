@@ -1,4 +1,5 @@
 import UIKit
+import TroposCore
 
 enum SettingsTableViewControllerSegueIdentifier: String {
     case PrivacyPolicy = "ShowWebViewController"
@@ -28,9 +29,7 @@ enum AboutSection: Int {
 
 class SettingsTableViewController: UITableViewController {
     @IBOutlet var thoughtbotImageView: UIImageView!
-//    private let settingsController = TRSettingsController()
-
-    // MARK: UIViewController
+    private let settingsController = SettingsController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,78 +52,75 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-//        tableView.checkCellAtIndexPath(indexPathForUnitSystem(settingsController.unitSystem))
+        tableView.checkCellAtIndexPath(indexPathForUnitSystem(settingsController.unitSystem))
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if let identifier = SettingsTableViewControllerSegueIdentifier(rawValue: segue.identifier ?? "") {
-//            switch identifier {
-//            case .PrivacyPolicy:
-//                let webViewController = segue.destinationViewController as? WebViewController
-//                webViewController?.URL = NSURL(string: "http://www.troposweather.com/privacy/")!
-//            case .Acknowledgements:
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = SettingsTableViewControllerSegueIdentifier(rawValue: segue.identifier ?? "") {
+            switch identifier {
+            case .PrivacyPolicy:
+                let webViewController = segue.destinationViewController as? WebViewController
+                webViewController?.URL = NSURL(string: "http://www.troposweather.com/privacy/")!
+            case .Acknowledgements:
+                break
 //                let textViewController = segue.destinationViewController as? TextViewController
 //                let fileURL = NSBundle.mainBundle().URLForResource("Acknowledgements", withExtension: "plist")
 //                let parser = fileURL.flatMap { AcknowledgementsParser(fileURL: $0) }
 //                textViewController?.text = parser?.displayString()
-//            }
-//        }
-//    }
+            }
+        }
+    }
 
-    // MARK: UITableViewDelegate
-    
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        switch (indexPath.section, indexPath.row) {
-//        case (Section.UnitSystem.rawValue, _):
-//            tableView.deselectRowAtIndexPath(indexPath, animated: true)
-//            tableView.uncheckCellsInSection(indexPath.section)
-//            selectUnitSystemAtIndexPath(indexPath)
-//        case (Section.Info.rawValue, InfoSection.Forecast.rawValue):
-//            UIApplication.sharedApplication().openURL(NSURL(string: "https://forecast.io")!)
-//        case (Section.About.rawValue, AboutSection.Thoughtbot.rawValue):
-//            UIApplication.sharedApplication().openURL(NSURL(string: "https://thoughtbot.com")!)
-//        default: break
-//        }
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch (indexPath.section, indexPath.row) {
+        case (Section.UnitSystem.rawValue, _):
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            tableView.uncheckCellsInSection(indexPath.section)
+            selectUnitSystemAtIndexPath(indexPath)
+        case (Section.Info.rawValue, InfoSection.Forecast.rawValue):
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://forecast.io")!)
+        case (Section.About.rawValue, AboutSection.Thoughtbot.rawValue):
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://thoughtbot.com")!)
+        default: break
+        }
+    }
 
-//    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-//        if let headerView = view as? UITableViewHeaderFooterView {
-//            headerView.textLabel.font = .defaultLightFontOfSize(13)
-//            headerView.textLabel.textColor = .lightTextColor()
-//        }
-//    }
-//
-//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        switch section {
-//        case Section.About.rawValue: return appVersionString()
-//        default: return super.tableView(tableView, titleForHeaderInSection: section)
-//        }
-//    }
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let headerView = view as? UITableViewHeaderFooterView {
+            headerView.textLabel?.font = .defaultLightFont(size: 13)
+            headerView.textLabel?.textColor = .lightTextColor()
+        }
+    }
 
-//    private func appVersionString() -> String {
-//        var string = "Tropos"
-//
-//        let infoDictionary = NSBundle.mainBundle().infoDictionary as? [String: AnyObject]
-//
-//        if let version = infoDictionary?["CFBundleShortVersionString"] as? String,
-//            buildNumber = infoDictionary?["CFBundleVersion"] as? String {
-//            string += " \(version) (\(buildNumber))"
-//        }
-//
-//        return string.uppercaseString
-//    }
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case Section.About.rawValue: return appVersionString()
+        default: return super.tableView(tableView, titleForHeaderInSection: section)
+        }
+    }
 
-    // MARK: Private
-    
-//    private func selectUnitSystemAtIndexPath(indexPath: NSIndexPath) {
-//        if let system = TRUnitSystem(rawValue: indexPath.row) {
-//            settingsController.unitSystem = system
-//        }
-//    }
+    private func appVersionString() -> String? {
+        let bundle = NSBundle.mainBundle()
+        guard let infoDictionary = bundle.infoDictionary as? [String: String] else {
+          return .None
+        }
 
-//    private func indexPathForUnitSystem(unitSystem: TRUnitSystem) -> NSIndexPath {
-//        return NSIndexPath(forRow: unitSystem.rawValue, inSection: 0)
-//    }
+        guard let version = infoDictionary["CFBundleShortVersionString"] else { return .None }
+        guard let buildNumber = infoDictionary["CFBundleVersion"] else { return .None }
+
+        return "Tropos \(version) (\(buildNumber))".uppercaseString
+
+    }
+
+    private func selectUnitSystemAtIndexPath(indexPath: NSIndexPath) {
+        if let system = UnitSystem(rawValue: indexPath.row) {
+            settingsController.unitSystem = system
+        }
+    }
+
+    private func indexPathForUnitSystem(unitSystem: UnitSystem) -> NSIndexPath {
+        return NSIndexPath(forRow: unitSystem.rawValue, inSection: 0)
+    }
 }
 
 extension UITableView {
