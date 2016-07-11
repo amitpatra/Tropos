@@ -33,18 +33,11 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        settingsController.unitSystemChanged.subscribeNext { unitSystem in
-//            if let system = TRUnitSystem(rawValue: unitSystem as! Int) {
-//                self.tableView.checkCellAtIndexPath(self.indexPathForUnitSystem(system))
-//            }
-//        }
 
-//        NSNotificationCenter.defaultCenter().rac_addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil).subscribeNext { _ in
-//            if let indexPath = self.tableView.indexPathForSelectedRow() {
-//                self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-//            }
-//        }
+      settingsController.unitSystemChanged = { [weak self] unitSystem in
+          guard let indexPath = self?.indexPathForUnitSystem(unitSystem) else { return }
+          self?.tableView.checkCellAtIndexPath(indexPath)
+        }
 
         thoughtbotImageView.tintColor = .lightTextColor();
         thoughtbotImageView.image = thoughtbotImageView.image?.imageWithRenderingMode(.AlwaysTemplate)
