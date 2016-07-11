@@ -63,7 +63,7 @@ class SettingsTableViewController: UITableViewController {
                 webViewController?.URL = NSURL(string: "http://www.troposweather.com/privacy/")!
             case .Acknowledgements:
                 let textViewController = segue.destinationViewController as? TextViewController
-                let fileURL = NSBundle.mainBundle().URLForResource("Acknowledgements", withExtension: "plist")
+                let fileURL = NSBundle.mainBundle().URLForResource("Pods-Tropos-acknowledgements", withExtension: "plist")
                 let parser = fileURL.flatMap { AcknowledgementsParser(fileURL: $0) }
                 textViewController?.text = parser?.displayString()
             }

@@ -79,7 +79,6 @@
 		4D7CDEBF1A46DD030038DD33 /* NSError+TRErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7CDEBE1A46DD030038DD33 /* NSError+TRErrors.m */; };
 		4D98E9851A80C43F00856412 /* TRDailyForecastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E9841A80C43F00856412 /* TRDailyForecastView.m */; };
 		4D9A00061A9D61CD000835A9 /* TRAnalyticsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A00051A9D61CD000835A9 /* TRAnalyticsController.m */; };
-		4D9CA35F1A5CABDD009E24DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D9CA35E1A5CABDD009E24DD /* Settings.bundle */; };
 		4DC069CD1A95B8F800F3BCEB /* TRColorBackdropLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC069CC1A95B8F800F3BCEB /* TRColorBackdropLayer.m */; };
 		4DC716601A9B1D5B00BC4BD4 /* TRRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7165F1A9B1D5B00BC4BD4 /* TRRefreshControl.m */; };
 		4DDF65061AB3AC0C00909D67 /* TRWeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF65051AB3AC0C00909D67 /* TRWeatherController.m */; };
@@ -101,6 +100,7 @@
 		A12FCE261D3385440062E7F1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D115AF11ADC8C0C0032AAA3 /* SettingsTableViewController.swift */; };
 		A12FCE281D3389A10062E7F1 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FCE271D3389A10062E7F1 /* TextViewController.swift */; };
 		A12FCE2A1D338A4A0062E7F1 /* DINNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A12FCE291D338A4A0062E7F1 /* DINNextLTPro-Regular.otf */; };
+		A12FCE2C1D33912D0062E7F1 /* Pods-Tropos-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12FCE2B1D33912D0062E7F1 /* Pods-Tropos-acknowledgements.plist */; };
 		A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */; };
 		A1BBE84F1D07D2F900A9631A /* CourierClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */; };
 		A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8691F1D3357D6003A826D /* AppearanceController.swift */; };
@@ -119,6 +119,7 @@
 		CFC0721C2D9EFFD3C3AE11A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059D0BDDF8DCE56549A4C9C6 /* Images.xcassets */; };
 		D565DEFF2AB8D09C8C2D043C /* Pods-UnitTests-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53AB1C3D15474F1BDC3868F6 /* Pods-UnitTests-settings-metadata.plist */; };
 		D7DD1B8AD495AFA4EC1CEFF9 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B1ADBC73A8A2EF7FB4E257 /* TRAppDelegate.m */; };
+		DD1F185D3C760E0CD8779131 /* Pods-Tropos-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CC8F544AD18438C09CEC3AD /* Pods-Tropos-settings-metadata.plist */; };
 		E74CDAD61BB614D700F57C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59B090E67C8BD269D3CD9DB /* Main.storyboard */; };
 		E7A895541AFD11AA0023205B /* TRApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A895531AFD11AA0023205B /* TRApplicationController.m */; };
 		E7B3B9271B34EDFE00BDD5A4 /* TRApplicationControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B3B9261B34EDFE00BDD5A4 /* TRApplicationControllerSpec.m */; };
@@ -294,7 +295,6 @@
 		4D9A00041A9D61CD000835A9 /* TRAnalyticsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAnalyticsController.h; sourceTree = "<group>"; };
 		4D9A00051A9D61CD000835A9 /* TRAnalyticsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAnalyticsController.m; sourceTree = "<group>"; };
 		4D9A000D1A9D7868000835A9 /* TRAnalyticsEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAnalyticsEvent.h; sourceTree = "<group>"; };
-		4D9CA35E1A5CABDD009E24DD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4DC069CB1A95B8F800F3BCEB /* TRColorBackdropLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRColorBackdropLayer.h; sourceTree = "<group>"; };
 		4DC069CC1A95B8F800F3BCEB /* TRColorBackdropLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRColorBackdropLayer.m; sourceTree = "<group>"; };
 		4DC7165E1A9B1D5B00BC4BD4 /* TRRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRefreshControl.h; sourceTree = "<group>"; };
@@ -326,6 +326,7 @@
 		A12FCE241D336FA90062E7F1 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A12FCE271D3389A10062E7F1 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		A12FCE291D338A4A0062E7F1 /* DINNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Regular.otf"; sourceTree = "<group>"; };
+		A12FCE2B1D33912D0062E7F1 /* Pods-Tropos-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-Tropos-acknowledgements.plist"; sourceTree = "<group>"; };
 		A1628AE61D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TRReactiveBackgroundTask.h"; sourceTree = "<group>"; };
 		A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TRReactiveBackgroundTask.m"; sourceTree = "<group>"; };
 		A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourierClientSpec.swift; sourceTree = "<group>"; };
@@ -761,10 +762,10 @@
 		B3D20A2BCCAAAFFFEF7D4E67 /* Other-Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A12FCE2B1D33912D0062E7F1 /* Pods-Tropos-acknowledgements.plist */,
 				1CDD2312F1EF05277F045E15 /* Info.plist */,
 				C2E44CE61A3A4273009CC844 /* Localizable.strings */,
 				C2E44CEB1A3A42C6009CC844 /* InfoPlist.strings */,
-				4D9CA35E1A5CABDD009E24DD /* Settings.bundle */,
 			);
 			path = "Other-Sources";
 			sourceTree = "<group>";
@@ -1039,13 +1040,14 @@
 				CFC0721C2D9EFFD3C3AE11A7 /* Images.xcassets in Resources */,
 				C2E44CE91A3A42C6009CC844 /* InfoPlist.strings in Resources */,
 				4D3336F61A80BE16001BA9A8 /* TRDailyForecastView.xib in Resources */,
+				A12FCE2C1D33912D0062E7F1 /* Pods-Tropos-acknowledgements.plist in Resources */,
 				C2E44CE41A3A4273009CC844 /* Localizable.strings in Resources */,
 				4A552F4B1CC7CB9B008C7298 /* Info.plist in Resources */,
 				5DA50AD91A82CAB300CAE666 /* DINNextLTPro-Light.otf in Resources */,
 				4A552F491CC7CB9B008C7298 /* Info.plist in Resources */,
 				A12FCE2A1D338A4A0062E7F1 /* DINNextLTPro-Regular.otf in Resources */,
-				4D9CA35F1A5CABDD009E24DD /* Settings.bundle in Resources */,
 				31649C3DCD1434CEFEE465DB /* Pods-Tropos-metadata.plist in Resources */,
+				DD1F185D3C760E0CD8779131 /* Pods-Tropos-settings-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
