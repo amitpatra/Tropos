@@ -578,7 +578,7 @@
                                                 </mask>
                                             </variation>
                                         </view>
-                                        <barButtonItem key="rightBarButtonItem" image="settings" id="eWK-Ok-4Kr">
+                                        <barButtonItem key="rightBarButtonItem" image="settings" style="plain" id="eWK-Ok-4Kr">
                                             <connections>
                                                 <segue destination="hTG-aj-CsX" kind="popoverPresentation" popoverAnchorBarButtonItem="eWK-Ok-4Kr" id="jyY-eu-oYj">
                                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
