@@ -5,21 +5,21 @@ class WebViewController : UIViewController, UIWebViewDelegate {
 
     var URL = NSURL()
 
-    // MARK: UIViewController
-
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         webView.loadRequest(NSURLRequest(URL: URL))
+        webView.scrollView.contentInset = UIEdgeInsets(
+            top: 20.0,
+            left: 20.0,
+            bottom: 20.0,
+            right: 20.0
+        )
     }
-
-    // MARK: Actions
 
     @IBAction func share(sender: UIBarButtonItem) {
         let activityViewController = UIActivityViewController(activityItems: [URL], applicationActivities: nil)
         presentViewController(activityViewController, animated: true, completion: nil)
     }
-
-    // MARK: UIWebViewDelegate
 
     func webViewDidStartLoad(webView: UIWebView) {
         navigationItem.rightBarButtonItem = .activityIndicatorBarButtonItem()
