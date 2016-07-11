@@ -62,11 +62,10 @@ class SettingsTableViewController: UITableViewController {
                 let webViewController = segue.destinationViewController as? WebViewController
                 webViewController?.URL = NSURL(string: "http://www.troposweather.com/privacy/")!
             case .Acknowledgements:
-                break
-//                let textViewController = segue.destinationViewController as? TextViewController
-//                let fileURL = NSBundle.mainBundle().URLForResource("Acknowledgements", withExtension: "plist")
-//                let parser = fileURL.flatMap { AcknowledgementsParser(fileURL: $0) }
-//                textViewController?.text = parser?.displayString()
+                let textViewController = segue.destinationViewController as? TextViewController
+                let fileURL = NSBundle.mainBundle().URLForResource("Acknowledgements", withExtension: "plist")
+                let parser = fileURL.flatMap { AcknowledgementsParser(fileURL: $0) }
+                textViewController?.text = parser?.displayString()
             }
         }
     }

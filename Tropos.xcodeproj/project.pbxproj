@@ -99,6 +99,8 @@
 		A11D71D51CD73751000EB4A3 /* CourierClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11D71D41CD73751000EB4A3 /* CourierClient.swift */; };
 		A12FCE251D336FA90062E7F1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FCE241D336FA90062E7F1 /* Color.swift */; };
 		A12FCE261D3385440062E7F1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D115AF11ADC8C0C0032AAA3 /* SettingsTableViewController.swift */; };
+		A12FCE281D3389A10062E7F1 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12FCE271D3389A10062E7F1 /* TextViewController.swift */; };
+		A12FCE2A1D338A4A0062E7F1 /* DINNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A12FCE291D338A4A0062E7F1 /* DINNextLTPro-Regular.otf */; };
 		A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */; };
 		A1BBE84F1D07D2F900A9631A /* CourierClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */; };
 		A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8691F1D3357D6003A826D /* AppearanceController.swift */; };
@@ -322,6 +324,8 @@
 		A11D71D21CD73697000EB4A3 /* Courier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Courier.framework; path = Carthage/Build/iOS/Courier.framework; sourceTree = "<group>"; };
 		A11D71D41CD73751000EB4A3 /* CourierClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourierClient.swift; sourceTree = "<group>"; };
 		A12FCE241D336FA90062E7F1 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A12FCE271D3389A10062E7F1 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		A12FCE291D338A4A0062E7F1 /* DINNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNextLTPro-Regular.otf"; sourceTree = "<group>"; };
 		A1628AE61D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TRReactiveBackgroundTask.h"; sourceTree = "<group>"; };
 		A1628AE71D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TRReactiveBackgroundTask.m"; sourceTree = "<group>"; };
 		A1BBE84D1D07D2C500A9631A /* CourierClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourierClientSpec.swift; sourceTree = "<group>"; };
@@ -658,6 +662,7 @@
 		4D0A5C3E1A3A578E0084C41E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				A12FCE291D338A4A0062E7F1 /* DINNextLTPro-Regular.otf */,
 				5DA50AD81A82CAB300CAE666 /* DINNextLTPro-Light.otf */,
 			);
 			path = Fonts;
@@ -771,6 +776,7 @@
 				C2E44CDF1A3A3C09009CC844 /* TRWeatherViewController.h */,
 				C2E44CE01A3A3C09009CC844 /* TRWeatherViewController.m */,
 				4D115AF11ADC8C0C0032AAA3 /* SettingsTableViewController.swift */,
+				A12FCE271D3389A10062E7F1 /* TextViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1037,6 +1043,7 @@
 				4A552F4B1CC7CB9B008C7298 /* Info.plist in Resources */,
 				5DA50AD91A82CAB300CAE666 /* DINNextLTPro-Light.otf in Resources */,
 				4A552F491CC7CB9B008C7298 /* Info.plist in Resources */,
+				A12FCE2A1D338A4A0062E7F1 /* DINNextLTPro-Regular.otf in Resources */,
 				4D9CA35F1A5CABDD009E24DD /* Settings.bundle in Resources */,
 				31649C3DCD1434CEFEE465DB /* Pods-Tropos-metadata.plist in Resources */,
 			);
@@ -1267,6 +1274,7 @@
 				A1F869201D3357D6003A826D /* AppearanceController.swift in Sources */,
 				A10109021D336DBE0024B1BA /* AcknowledgementsParser.swift in Sources */,
 				A12FCE261D3385440062E7F1 /* SettingsTableViewController.swift in Sources */,
+				A12FCE281D3389A10062E7F1 /* TextViewController.swift in Sources */,
 				C2E44CEF1A3B6E89009CC844 /* NSDate+TRRelativeDate.m in Sources */,
 				4D4937781A82F30D007A1FA9 /* TRLabel.m in Sources */,
 				A1628AE81D0E56FB00B6AF29 /* UIApplication+TRReactiveBackgroundTask.m in Sources */,
